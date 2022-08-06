@@ -8,8 +8,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Ubuntu: "'Ubuntu'",
-        OpenSans: "'Open Sans'",
+        Ubuntu: "'helvetica'",
+        OpenSans: "'helvetica'",
       },
     },
   },
