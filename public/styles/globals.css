@@ -13,14 +13,23 @@
         @apply hover:underline cursor-pointer;
     }
 }
+
 .opa{
     background: black;
 }
 input{
     background-color: transparent;
 }
+input::placeholder{
+    color: grey;
+}
+small{
+    color: black;
+}
 .bgg{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(252,207,207,1) 0%, rgba(255,243,228,1) 90% );
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;

@@ -2,10 +2,12 @@ import Head from "next/head";
 import Avatar from "../components/Avatar";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import Darkmode from "../components/Darkmode";
 import { ViewGridIcon } from "@heroicons/react/solid";
 import { SearchIcon, MicrophoneIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { useRef } from "react";
+import {Helmet} from "react-helmet";
 import { useRouter } from "next/router";
 
 export default function Home() {
@@ -22,6 +24,7 @@ export default function Home() {
   };
 
   return (
+    
     <div className="opa" >
     <div className="flex bgg opa flex-col items-center h-screen ">
       <Head>
@@ -31,7 +34,25 @@ export default function Home() {
           content="Kata kominfo kita harus buat search engine yg bisa menyaingi google, ya walaupun pakai API Google wkwk."
         />
         <link rel="icon" href="/favicon.ico" />
+        <script src="/js/darkmode.js" type="text/javascript" />
       </Head>
+
+
+      {/* header */}
+
+      <header className="flex w-full p-5 justify-between text-sm text-gray-800">
+        {/*left section*/}
+        <div className="flex space-x-4 items-center font-Ubuntu">
+          
+        </div>
+
+        {/*right section*/}
+        <Darkmode />
+      </header>
+
+             
+
+
 
       {/*body*/}
       <form className="flex flex-col items-center pt-20 mt-20 flex-grow w-4/5">
@@ -49,7 +70,7 @@ export default function Home() {
             className="flex-grow focus:outline-none"
           />
           <button onClick={search}>
-            <SearchIcon className="h-5 mr-3 text-gray-700" />
+            <SearchIcon className="icons h-5 mr-3 text-gray-700" />
           </button>
         </div>
         <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4 font-Ubuntu">

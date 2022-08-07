@@ -1,17 +1,18 @@
 import PaginationButtons from "./PaginationButtons";
 import Footer from "./Footer";
+import Darkmode from "./Darkmode";
 function SearchResults({ results }) {
   return (
     <div>
-      <div className="mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52 font-OpenSans">
-
+      <div className="bgg mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52 font-OpenSans">
+        <Darkmode />
         {results.items?.map((result) => (
           <div key={result.link} className="max-w-xl mb-8 font-sans">
             <div className="group">
               
               <a href={result.link}>
                 <h2
-                  className="truncate 
+                  className="titl truncate 
            text-xl text-red-700 group-hover:underline font-OpenSans"
                 >
                   {result.title}
@@ -24,7 +25,7 @@ function SearchResults({ results }) {
                 {result.formattedUrl}
               </a>
             </div>
-            <p className="line-clamp-2 text-gray-900 font-OpenSans">
+            <p className="desc line-clamp-2 text-gray-900 font-OpenSans">
               {result.snippet}
             </p>
           </div>
