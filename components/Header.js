@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/outline";
 import Avatar from "./Avatar";
 import HeaderOptions from "./HeaderOptions";
+import Darkmode from "./Darkmode";
 
 function Header() {
   const router = useRouter();
@@ -32,9 +33,10 @@ function Header() {
             className="flex-grow focus:outline-none"
           />
           <button onClick={search}>
-            <SearchIcon className="h-5 mr-3 text-gray-700" />
+            <SearchIcon className="icons h-5 mr-3 text-gray-700" />
           </button>
         </form>
+        <Darkmode />
       </div>
       <HeaderOptions />
     </header>

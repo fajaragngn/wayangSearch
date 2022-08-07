@@ -5,7 +5,7 @@ function SearchResults({ results }) {
   return (
     <div>
       <div className="bgg mx-auto w-full px-3 sm:pl-[5%] md:pl-[14%] lg:pl-52 font-OpenSans">
-        <Darkmode />
+        
         {results.items?.map((result) => (
           <div key={result.link} className="max-w-xl mb-8 font-sans">
             <div className="group">
