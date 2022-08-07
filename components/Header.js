@@ -20,7 +20,7 @@ function Header() {
 
   return (
     <header className="sticky top-0 bg-white">
-      <div className="flex w-full p-6 items-center">
+      <div className="flex w-full pt-6 items-center">
         <a href="/" >
           <img width="100" src="logo.png" className=" px-1" />
         </a>
