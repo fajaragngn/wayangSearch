@@ -24,7 +24,7 @@ This are things you need to use the web app and how to install them.
 
 3. Clone the repo
    ```sh
-   git clone https://github.com/cosmicwanderer7/google-clone.git
+   git clone https://github.com/fajaragngn/wayangSearch.git
    ```
    
 4. Add Next

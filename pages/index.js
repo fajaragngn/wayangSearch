@@ -34,16 +34,12 @@ export default function Home() {
 
       {/*body*/}
       <form className="flex flex-col items-center pt-3 flex-grow w-4/5">
-        <Image
-          src="../public/wayang.png"
-          height={207}
-          width={700}
-          priority
-        />
+        
+      <img width="300" src="logo.png" className=" px-1" />
 
         <div
-          className="flex w-full mt-5 pt-1 pb-1 hover:shadow-lg focus-within:shadow-lg max-w-md 
-      border border-purple-600 px-1 py-3 items-center sm:max-w-xl lg:max-w-2xl"
+          className="flex w-full mt-5 pt-1 pb-1 hover:shadow-lg focus-within:shadow-sm max-w-md 
+      border border-red-600 px-1 py-3 items-center sm:max-w-xl lg:max-w-2xl"
         >
           <input
             ref={searchInputRef}
@@ -55,10 +51,13 @@ export default function Home() {
           </button>
         </div>
         <div className="flex flex-col w-1/2 space-y-2 justify-center mt-8 sm:space-y-0 sm:flex-row sm:space-x-4 font-Ubuntu">
-          
+        
             
         </div>
       </form>
+      <Footer />
+
+      
     </div>
   );
 }

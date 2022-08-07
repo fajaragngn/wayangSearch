@@ -21,9 +21,11 @@ function Header() {
   return (
     <header className="sticky top-0 bg-white">
       <div className="flex w-full p-6 items-center">
-        <h1>Wayang</h1>
+        <a href="/" >
+          <img width="100" src="logo.png" className=" px-1" />
+        </a>
 
-        <form className="flex flex-grow px-5 py-3 pt-1 pb-1 ml-10 mr-5 border border-purple-600 shadow-lg max-w-3xl items-center ">
+        <form className="flex flex-grow px-1 py-3 pt-1 pb-1 ml-10 mr-5 border border-red-600 shadow-lg max-w-3xl items-center ">
           <input
             ref={searchInputRef}
             type="text"
