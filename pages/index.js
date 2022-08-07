@@ -22,7 +22,8 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center h-screen ">
+    <div className="opa" >
+    <div className="flex bgg opa flex-col items-center h-screen ">
       <Head>
         <title>Wayang</title>
         <meta
@@ -33,9 +34,9 @@ export default function Home() {
       </Head>
 
       {/*body*/}
-      <form className="flex flex-col items-center pt-3 flex-grow w-4/5">
+      <form className="flex flex-col items-center pt-20 mt-20 flex-grow w-4/5">
         
-      <img width="300" src="logo.png" className=" px-1" />
+      <img width="400" src="wayang2.png" className=" px-1" />
 
         <div
           className="flex w-full mt-5 pt-1 pb-1 hover:shadow-lg focus-within:shadow-sm max-w-md 
@@ -44,6 +45,7 @@ export default function Home() {
           <input
             ref={searchInputRef}
             type="text"
+            placeholder="Cari yang gak ada . . ."
             className="flex-grow focus:outline-none"
           />
           <button onClick={search}>
@@ -56,8 +58,7 @@ export default function Home() {
         </div>
       </form>
       <Footer />
-
-      
+      </div>
     </div>
   );
 }

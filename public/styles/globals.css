@@ -13,3 +13,16 @@
         @apply hover:underline cursor-pointer;
     }
 }
+.opa{
+    background: black;
+}
+input{
+    background-color: transparent;
+}
+.bgg{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(252,207,207,1) 0%, rgba(255,243,228,1) 90% );
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+
+}

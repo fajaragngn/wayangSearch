@@ -20,9 +20,9 @@ function Header() {
 
   return (
     <header className="sticky top-0 bg-white">
-      <div className="flex w-full pt-6 items-center">
+      <div className="flex w-full p-5 items-center">
         <a href="/" >
-          <img width="100" src="logo.png" className=" px-1" />
+          <img width="200" src="wayang2.png" className=" px-1" />
         </a>
 
         <form className="flex flex-grow px-1 py-3 pt-1 pb-1 ml-10 mr-5 border border-red-600 shadow-lg max-w-3xl items-center ">
