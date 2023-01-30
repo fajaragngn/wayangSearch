@@ -1,17 +1,14 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  mode: "jit",
-  purge: [
-    "./pages/**/*.{js,jsx,ts,tsx,vue}",
-    "./components/**/*.{js,jsx,ts,tsx,vue}",
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
-  content: [],
   theme: {
-    extend: {
-      fontFamily: {
-        Ubuntu: "'helvetica'",
-        OpenSans: "'helvetica'",
-      },
-    },
+    extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require('tailwind-scrollbar-hide'), require('tailwind-scrollbar')],
+  variants: {
+    scrollbar: ['rounded'],
+  },
 };
