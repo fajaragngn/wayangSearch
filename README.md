@@ -8,7 +8,7 @@
 
 ```bash
 # Clone this repo
-https://github.com/fajarspace/gatotkacaEngine
+https://github.com/fajarspace/gatotkaca-SearchEngine
 
 # Install
 npm install
